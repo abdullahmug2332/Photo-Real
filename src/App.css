@@ -45,6 +45,9 @@ p{
 td{
   border: 1px solid rgb(221, 221, 221);
 }
-/* .ah{
-
-} */
+@media (max-width: 768px) {
+  .hero,.home2::before {
+    background-attachment: scroll; 
+    background-position: center;
+  }
+}
