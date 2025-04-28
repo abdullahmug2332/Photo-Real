@@ -7,7 +7,7 @@ import { IoLocation } from "react-icons/io5";
 export default function Footer() {
   return (
     <>
-      <div className='footerup relative top-2'>
+      <div id='contactus' className='footerup relative top-2'>
             contact
       </div>
       <div className="  items-center bg-[#20b2aa] text-white">

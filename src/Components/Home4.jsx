@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import {productsData} from "../data/product"
-import jpg1 from '../assets/products/01.jpg'
+
 
 
 export default function Home4() {
@@ -9,8 +9,8 @@ export default function Home4() {
   const filteredProducts = category === "All Products" ? productsData: productsData.filter(item => item.category.toLowerCase() === category.toLowerCase())
         
   return (
-    <section className=' w-[100%] py-[70px]'>
-    <div className=' w-[90%] 2xl:w-[75%] mx-auto '>
+    <section id='products' className=' w-[100%] py-[70px]'>
+    <div className=' w-[95%] 2xl:w-[75%] mx-auto '>
       <p className='text-[30px] md:text-[58px] font-[700] tracking-tighter mb-[20px] text-[#3E4349]'>Products</p>
       <p className='p text-[17px] md:text-[20px] mb-[15px]'>We offer a variety of photography products, including 120mm and 35mm films, Canon Zink photo paper, and disposable cameras for easy shooting. You can also find Instax and Polaroid films, memory cards, and gift certificates for photography lovers. Whether you need instant prints, classic film rolls, or camera accessories, we’ve got you covered. Explore our collection and capture your memories effortlessly!</p>
       <hr className='text-[#3E4349]' />
