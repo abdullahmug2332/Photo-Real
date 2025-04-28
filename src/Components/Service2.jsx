@@ -7,7 +7,7 @@ export default function Service2() {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <section className=" w-[95%] 2xl:w-[75%] mx-auto my-[90px]  py-[20px] px-[40px]">
+    <section className=" w-[97%] 2xl:w-[75%] mx-auto my-[90px]  py-[20px] px-[40px]">
       <h1 className="h1  uppercase">
         <span className="text-[#3E4349]">photos </span>
         for

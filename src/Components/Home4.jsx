@@ -10,7 +10,7 @@ export default function Home4() {
         
   return (
     <section id='products' className=' w-[100%] py-[70px]'>
-    <div className=' w-[95%] 2xl:w-[75%] mx-auto '>
+    <div className=' w-[97%] 2xl:w-[75%] mx-auto '>
       <p className='text-[30px] md:text-[58px] font-[700] tracking-tighter mb-[20px] text-[#3E4349]'>Products</p>
       <p className='p text-[17px] md:text-[20px] mb-[15px]'>We offer a variety of photography products, including 120mm and 35mm films, Canon Zink photo paper, and disposable cameras for easy shooting. You can also find Instax and Polaroid films, memory cards, and gift certificates for photography lovers. Whether you need instant prints, classic film rolls, or camera accessories, we’ve got you covered. Explore our collection and capture your memories effortlessly!</p>
       <hr className='text-[#3E4349]' />

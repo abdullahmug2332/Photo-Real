@@ -8,7 +8,7 @@ export default function Address() {
         window.scrollTo(0, 0);
     }, []);
   return (
-    <section className=" ah mt-[80px] w-[90%] 2xl:w-[75%] mx-auto ">
+    <section className=" ah mt-[80px] w-[97%] 2xl:w-[75%] mx-auto ">
       <h1 className="h1 text-center">
         Address<span className="text-[#3E4349]"> &</span> Business Hours
       </h1>

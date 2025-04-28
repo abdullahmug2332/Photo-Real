@@ -7,7 +7,7 @@ export default function Service1() {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <section className=" w-[95%] 2xl:w-[75%] mx-auto mt-[90px]">
+    <section className=" w-[97%] 2xl:w-[75%] mx-auto mt-[90px]">
       <h1 className="h1  uppercase">
         Passport<span className="text-[#3E4349]">,</span> visa{" "}
         <span className="text-[#3E4349]">and</span> ID{" "}
