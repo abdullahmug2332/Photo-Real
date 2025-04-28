@@ -8,8 +8,8 @@ export default function Service6() {
   }, []);
   return (
     <section className="w-[97%] 2xl:w-[75%] mx-auto my-[90px]  py-[20px] px-[40px] ">
-      <h1 className="h1 !text-[#3E4349] ">
-       Photo slideshow with music on a DVD
+      <h1 className="h1 !text-[#3E4349] uppercase  ">
+      Scanning <span className='text-[#20b2aa]'>(film, photos, slides)</span>
       </h1>
       <br />
       <div>

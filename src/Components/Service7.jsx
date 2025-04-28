@@ -6,7 +6,7 @@ export default function Service7() {
   }, []);
   return (
     <section className="w-[97%] 2xl:w-[75%] mx-auto my-[90px]  py-[20px] px-[40px] ">
-      <h1 className="h1 !text-[#3E4349] ">
+      <h1 className="h1 !text-[#3E4349] uppercase ">
       Photo <span className='text-[#20b2aa] '>slideshow</span > with <span className='text-[#20b2aa] '>music</span> on a <span className='text-[#20b2aa] '>DVD</span>
       </h1>
       <br />
