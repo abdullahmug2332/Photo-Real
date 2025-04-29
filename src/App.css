@@ -35,14 +35,21 @@ p,.pf{
   left: 0;
   width: 100%;
   height: 100vh;
-  min-height: 739px;
-  background-image: url(../public/heroimg.jpg);
+  min-height: 799px;
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.932),
+      rgba(0, 0, 0, 0.541),
+      rgba(0, 0, 0, 0.219)
+    ),
+    url(../public/heroimg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
   z-index: -1;
 }
+
 
 
 td{
