@@ -56,10 +56,10 @@ const Navbar = () => {
 
           {/* Desktop Menu */}
           <ul className='hidden md:flex ml-auto text-[14px] font-semibold relative'>
-            <li className='hover:bg-[#20B2AA] py-[20px] lg:px-[5px]  px-[10px] cursor-pointer pf li'>
+            <li className='hover:bg-[#20B2AA] py-[20px] lg:px-[10px]  px-[5px] cursor-pointer pf li'>
               <a href="#hero" onClick={scrollToSection}>Home</a>
             </li>
-            <li className='hover:bg-[#20B2AA] py-[20px] lg:px-[5px]  px-[10px] cursor-pointer pf li'>
+            <li className='hover:bg-[#20B2AA] py-[20px] lg:px-[10px]  px-[5px] cursor-pointer pf li'>
               <a href="#aboutus" onClick={scrollToSection}>About Us</a>
             </li>
             <li
@@ -99,13 +99,13 @@ const Navbar = () => {
                 </ul>
               )}
             </li>
-            <li className='hover:bg-[#20B2AA] py-[20px] lg:px-[5px]  px-[10px] cursor-pointer pf li'>
+            <li className='hover:bg-[#20B2AA] py-[20px] lg:px-[10px]  px-[5px] cursor-pointer pf li'>
               <a href="#products" onClick={scrollToSection}>Product</a>
             </li>
-            <li className='hover:bg-[#20B2AA] py-[20px] lg:px-[5px]  px-[10px] cursor-pointer pf li'>
+            <li className='hover:bg-[#20B2AA] py-[20px] lg:px-[10px]  px-[5px] cursor-pointer pf li'>
               <a href="#contactus" onClick={scrollToSection}>Contact Us</a>
             </li>
-            <Link to={"/address"} className='hover:bg-[#20B2AA] py-[20px] lg:px-[5px] px-[10px] cursor-pointer pf li'>
+            <Link to={"/address"} className='hover:bg-[#20B2AA] py-[20px] lg:px-[10px]  px-[5px] cursor-pointer pf li'>
               Address & Business Hours
             </Link>
           </ul>
