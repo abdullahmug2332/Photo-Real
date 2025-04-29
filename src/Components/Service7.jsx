@@ -7,7 +7,7 @@ export default function Service7() {
   return (
     <section className="w-[97%] 2xl:w-[75%] mx-auto my-[90px]  py-[20px] px-[40px] ">
       <h1 className="h1 !text-[#3E4349] uppercase ">
-      Photo <span className='text-[#20b2aa] '>slideshow</span > with <span className='text-[#20b2aa] '>music</span> on a <span className='text-[#20b2aa] '>DVD</span>
+      Photo <span className='text-[#91816c] '>slideshow</span > with <span className='text-[#91816c] '>music</span> on a <span className='text-[#91816c] '>DVD</span>
       </h1>
       <br />
         <iframe className='w-[100%] h-[400px]  md:h-[720px]' src="https://www.youtube.com/embed/azmifz4vt70?si=44oQYZ_SJnbgY8nc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br />
@@ -26,7 +26,7 @@ export default function Service7() {
         </ul><br />
         <p className="p">After we have photos and music, we’ll make a test version of a slideshow in low resolution and send it to you by email for review. Corrections to test version are free and unlimited.</p>
         <p className="p">After you approved the test version, we’ll make a high quality version of the slideshow and burn it to DVD or save it on a USB flash drive in MP4 format.</p>
-        <p className="p">If you have any questions, please call (718) 875-1776 (ask Jay) or drop a line to <span className='text-[#20b2aa] underline cursor-pointer'>photoreal52@gmail.com</span></p>
+        <p className="p">If you have any questions, please call (718) 875-1776 (ask Jay) or drop a line to <span className='text-[#91816c] underline cursor-pointer'>photoreal52@gmail.com</span></p>
         <p className="p">Thank you!</p>
     </section>
   )

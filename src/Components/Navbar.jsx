@@ -41,9 +41,9 @@ const Navbar = () => {
 
         {/* Logo */}
         <Link to={"/"} onClick={closeMobileMenu}>
-          <p className='font-bold text-[28px] font-[Montserrat, "Trebuchet MS", sans-serif] hover:scale-[1.05] duration-500'>
-            Photo <span className='relative left-[-8px] text-[#20b2aa]'>real</span>
-          </p>
+          <h1 className=' font-bold text-[30px] md:text-[38px] font-["Cal Sans", sans-serif] hover:scale-[1.05] duration-500 tracking-wider h'>
+            Photo <span className='relative left-[-5px] text-[#91816c]'>real</span>
+          </h1>
         </Link>
 
         {/* Hamburger Icon */}
@@ -54,15 +54,15 @@ const Navbar = () => {
 
         {/* Desktop Menu */}
         <ul className='hidden md:flex ml-auto text-[14px] font-semibold relative'>
-          <li className='hover:bg-[#20b2aa] py-[20px] px-[10px] cursor-pointer'>
+          <li className='hover:bg-[#91816c] py-[20px] px-[10px] cursor-pointer pf'>
             <a href="#hero" onClick={scrollToSection}>Home</a>
           </li>
-          <li className='hover:bg-[#20b2aa] py-[20px] px-[10px] cursor-pointer'>
+          <li className='hover:bg-[#91816c] py-[20px] px-[10px] cursor-pointer pf'>
             <a href="#aboutus" onClick={scrollToSection}>About Us</a>
           </li>
           <li
             id='navser'
-            className='hover:cursor-pointer hover:bg-[#20b2aa] p-[20px] relative'
+            className='hover:cursor-pointer hover:bg-[#91816c] p-[20px] relative pf'
             onMouseEnter={() => setShowDropdown(true)}
             onMouseLeave={() => setShowDropdown(false)}
           >
@@ -88,7 +88,7 @@ const Navbar = () => {
                   <Link
                     key={index}
                     to={item.to}
-                    className='hover:bg-[#20b2aa] py-[10px] text-center w-[200px]'
+                    className='hover:bg-[#91816c] py-[10px] text-center w-[200px]'
                     onClick={closeDropdown}
                   >
                     {item.label}
@@ -97,13 +97,13 @@ const Navbar = () => {
               </ul>
             )}
           </li>
-          <li className='hover:bg-[#20b2aa] py-[20px] px-[10px] cursor-pointer'>
+          <li className='hover:bg-[#91816c] py-[20px] px-[10px] cursor-pointer pf'>
             <a href="#products" onClick={scrollToSection}>Product</a>
           </li>
-          <li className='hover:bg-[#20b2aa] py-[20px] px-[10px] cursor-pointer'>
+          <li className='hover:bg-[#91816c] py-[20px] px-[10px] cursor-pointer pf'>
             <a href="#contactus" onClick={scrollToSection}>Contact Us</a>
           </li>
-          <Link to={"/address"} className='hover:bg-[#20b2aa] py-[20px] px-[10px] cursor-pointer'>
+          <Link to={"/address"} className='hover:bg-[#91816c] py-[20px] px-[10px] cursor-pointer pf'>
             Address & Business Hours
           </Link>
         </ul>
@@ -117,7 +117,7 @@ const Navbar = () => {
             />
           </div>
           <ul className='flex flex-col items-center text-[14px] pt-4'>
-          <li className='hover:bg-[#20b2aa] px-[20px] py-[14px] w-full text-center'>
+          <li className='hover:bg-[#91816c] px-[20px] py-[14px] w-full text-center pf'>
             <a href="#hero" onClick={() => {
               closeMobileMenu();
               scrollToSection();
@@ -125,14 +125,14 @@ const Navbar = () => {
               Home
             </a>
           </li>
-            <li className='hover:bg-[#20b2aa] px-[20px] py-[14px] w-full text-center'>
+            <li className='hover:bg-[#91816c] px-[20px] py-[14px] w-full text-center pf'>
               <a href="#aboutus" onClick={() => {
               closeMobileMenu();
               scrollToSection();
             }}>About Us</a>
             </li>
             <li
-              className='hover:bg-[#20b2aa] px-[20px] py-[14px] w-full text-center'
+              className='hover:bg-[#91816c] px-[20px] py-[14px] w-full text-center pf'
               onClick={() => setShowMobDropdown(!showMobDropdown)}
             >
               Services <TiArrowSortedDown className='inline' />
@@ -140,7 +140,7 @@ const Navbar = () => {
 
             {/* Dropdown on Mobile */}
             {showMobDropdown && (
-              <ul className='flex flex-col text-[14px] bg-[#25292c] w-full'>
+              <ul className='flex flex-col text-[14px] bg-[#25292c] w-full pf'>
                 {[
                   { label: 'Passport, Visa and ID Photos', to: '/service1' },
                   { label: 'Photos of ID', to: '/service2' },
@@ -156,7 +156,7 @@ const Navbar = () => {
                   <Link
                     key={index}
                     to={item.to}
-                    className='hover:bg-[#20b2aa] py-[10px] px-[20px] text-center'
+                    className='hover:bg-[#91816c] py-[10px] px-[20px] text-center pf'
                     onClick={closeMobileMenu}
                   >
                     {item.label}
@@ -164,19 +164,19 @@ const Navbar = () => {
                 ))}
               </ul>
             )}
-            <li className='hover:bg-[#20b2aa] px-[20px] py-[14px] w-full text-center'>
+            <li className='hover:bg-[#91816c] px-[20px] py-[14px] w-full text-center pf'>
               <a href="#products" onClick={() => {
               closeMobileMenu();
               scrollToSection();
             }}>Product</a>
             </li>
-            <li className='hover:bg-[#20b2aa] px-[20px] py-[14px] w-full text-center'>
+            <li className='hover:bg-[#91816c] px-[20px] py-[14px] w-full text-center pf'>
               <a href="#contactus" onClick={closeMobileMenu}>Contact Us</a>
             </li>
             <Link to={"/address"} onClick={() => {
               closeMobileMenu();
               scrollToSection();
-            }} className='hover:bg-[#20b2aa] px-[20px] py-[14px] w-full text-center'>
+            }} className='hover:bg-[#91816c] px-[20px] py-[14px] w-full text-center pf'>
               Address & Business Hours
             </Link>
           </ul>

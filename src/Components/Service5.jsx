@@ -7,7 +7,7 @@ export default function Service5() {
   }, []);
   return (
     <section className="w-[97%] 2xl:w-[75%] mx-auto my-[90px]  py-[20px] px-[40px]">
-      <h1 className="h1 text-[#20b2aa] uppercase">
+      <h1 className="h1 text-[#91816c] uppercase">
         Digital <span className="text-[#3E4349]">Photos</span> Printing
       </h1><br />
 
@@ -46,7 +46,7 @@ export default function Service5() {
         <br />
         <table className="min-w-full border border-gray-300 text-sm shadow-xl p">
         <thead>
-          <tr className="bg-teal-600 text-white p">
+          <tr className="bg-[#91816c] text-white p">
             <th className="text-left p-3 border-r border-gray-300 !text-white p">
             Total # of prints
             </th>

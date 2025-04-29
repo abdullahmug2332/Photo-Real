@@ -7,8 +7,8 @@ export default function Service3() {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <section className="w-[97%] 2xl:w-[75%] mx-auto my-[90px] py-[20px] px-[40px]">
-      <h1 className="h1  uppercase">
+    <section className="w-[97%] 2xl:w-[75%] mx-auto my-[90px] py-[20px] px-[40px] pf">
+      <h1 className="h1  uppercase h">
         <span className="text-[#3E4349]">
           Film developing and scanning into{" "}
         </span>
@@ -16,7 +16,7 @@ export default function Service3() {
         <span className="text-[#3E4349]"> (35mm and 120mm films)</span>
       </h1>
       <div>
-        <h1 className="h1 text-[#3E4349]">Types of ID Photos We Take</h1>
+        <h1 className="h1 text-[#3E4349] h">Types of ID Photos We Take</h1>
         <hr />
         <br />
         <div>
@@ -40,7 +40,7 @@ export default function Service3() {
           </div>
           <div>
 
-          <h1 className="h1 text-[#3E4349]">Types of ID Photos We Take</h1>
+          <h1 className="h1 text-[#3E4349] h">Types of ID Photos We Take</h1>
           <hr /><br />
           <p className="p">Color Rolls are $13 for scanning and take ~1 day.</p>
           <p className="p">B/W Rolls are 35mm and costs $16.</p>
@@ -49,7 +49,7 @@ export default function Service3() {
           </div> <br />
           
           <div>
-          <h1 className="h1 text-[#3E4349]">How to pay</h1>
+          <h1 className="h1 text-[#3E4349] h">How to pay</h1>
           <hr /><br />
             <p className="p">We accept:</p>
             <ul className="list-disc list-inside p">

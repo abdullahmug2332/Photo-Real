@@ -1,18 +1,27 @@
+
+
 @tailwind base;
 @tailwind components;
 
 .p{
-  font-family: Montserrat, "Trebuchet MS", sans-serif;
+  font-family: "Nunito", sans-serif;
   @apply text-[17px] md:text-[20px] text-[#3E4349];
 }
+.h{
+  font-family: "Cal Sans", sans-serif;
+ @apply tracking-wider
+}
 .h1{
-  @apply text-[25px] md:text-[40px] font-[700] leading-[39px] tracking-tighter mb-[20px] text-[#20b2aa];
+  font-family: "Cal Sans", sans-serif;
+  font-style: normal;
+  @apply text-[25px] md:text-[40px] font-[400] leading-[39px]  mb-[20px] tracking-wider text-[#91816c] relative top-[12px]; 
 }
 @tailwind utilities;
 
-p{
-  font-family: Montserrat, "Trebuchet MS", sans-serif;
+p,.pf{
+  font-family: "Nunito", sans-serif;
 }
+
 .home2{
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../src/assets/homeimg2.jpg);
   background-position: center;
@@ -35,13 +44,7 @@ p{
   z-index: -1;
 }
 
-.footerup{
-  background: #20b2aa url(../src/assets/fotter.png) repeat-x top;
-  color: #20b2aa;
-  text-align: center;
-  padding-top: 90px;
-  border: 0;
-}
+
 td{
   border: 1px solid rgb(221, 221, 221);
 }

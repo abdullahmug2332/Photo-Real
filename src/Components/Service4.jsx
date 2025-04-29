@@ -8,8 +8,8 @@ export default function Service4() {
   }, []);
   return (
     <section className="w-[97%] 2xl:w-[75%] mx-auto my-[90px]  py-[20px] px-[40px]">
-      <h1 className="h1 text-[#3E4349] uppercase">
-      Disposable <span className='text-[#20b2aa]'>cameras</span> developing
+      <h1 className="h1 text-[#3E4349] uppercase h">
+      Disposable <span className='text-[#91816c]'>cameras</span> developing
       </h1>
       <hr />
       <br />
@@ -19,12 +19,12 @@ export default function Service4() {
       </p>
       <img src={img1} className="w-[100%] my-7  hidden md:block " />
       <br />
-      <h1 className="h1 text-[#3E4349]">Price list</h1>
+      <h1 className="h1 text-[#3E4349] h">Price list</h1>
       <hr />
       <br />
       <table className="min-w-full border border-gray-300 text-sm shadow-xl p">
         <thead>
-          <tr className="bg-teal-600 text-white p">
+          <tr className="bg-[#91816c] text-white p">
             <th className="text-left p-3 border-r border-gray-300 !text-white p">
               Job
             </th>
@@ -67,7 +67,7 @@ export default function Service4() {
         </tbody>
       </table>{" "}
       <br />
-      <h1 className="h1 text-[#3E4349]">How to pay</h1>
+      <h1 className="h1 text-[#3E4349 h">How to pay</h1>
       <hr />
       <br />
       <p className="p">We accept:</p>

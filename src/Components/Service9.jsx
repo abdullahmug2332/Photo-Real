@@ -9,9 +9,9 @@ export default function Service9() {
   return (
     <section className="w-[97%] 2xl:w-[75%] mx-auto my-[90px]  py-[20px] px-[40px] ">
       <h1 className="h1 !text-[#3E4349]  uppercase">
-        <span className="text-[#20b2aa] ">cd</span> &
-        <span className="text-[#20b2aa] "> dvd</span> copying into (
-        <span className="text-[#20b2aa] ">duplication</span>) service
+        <span className="text-[#91816c] ">cd</span> &
+        <span className="text-[#91816c] "> dvd</span> copying into (
+        <span className="text-[#91816c] ">duplication</span>) service
       </h1>
       <br />
       <img
@@ -43,7 +43,7 @@ export default function Service9() {
       <br />
       <table className="min-w-full border border-gray-300 text-sm shadow-xl p my-[60px]">
         <thead>
-          <tr className="bg-teal-600 text-white ">
+          <tr className="bg-[#91816c] text-white ">
             <th className="text-left p-3 border-r border-gray-300 !text-white  p">
               Service type
             </th>
