@@ -5,7 +5,7 @@ export default function Service7() {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <section className="w-[97%] 2xl:w-[75%] mx-auto my-[90px]  py-[20px] px-[40px] ">
+    <section className="w-[95%] 2xl:w-[75%] mx-auto my-[90px]  py-[20px] ">
       <h1 className="h1 !text-[#3E4349] uppercase ">
       Photo <span className='text-[#20B2AA] '>slideshow</span > with <span className='text-[#20B2AA] '>music</span> on a <span className='text-[#20B2AA] '>DVD</span>
       </h1>
@@ -18,7 +18,7 @@ export default function Service7() {
         <p className="p">If your photos are physical (paper photos), then bring them, we’ll scan them.</p>
         <p className="p">If your photos are digital, you’ll bring them on a USB or memory card or send them by email or upload to Google Drive / Dropbox and send us the link.</p>
         <p className="p"><strong>Price:</strong></p>
-        <ul className="list-disc list-inside p">
+        <ul className="list-disc list-outside ml-[20px] p">
             <li>paper photos: 1-100 are $2.50 each, 100+ are $2.00 each</li>
             <li>ditial photos: 1-100 are $1.50 each, 100+ are $1.25 each.</li>
             <li>music: it depends</li>

@@ -37,7 +37,8 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className='sticky z-[999] top-[40px] left-0 w-full h-[70px] md:h-auto bg-black text-white flex items-center z-2'>
+      <nav className='fixed z-[999] 
+       top-[40px] left-0 w-full h-[70px] md:h-auto bg-black text-white flex items-center z-2' >
         <div onClick={()=> setToggle(false)} className={`bs z-4 ${toggle == true ? 'block opacity-100' : 'hidden opacity-0'} `}></div>
         <div className='2xl:w-[70%] w-[80%] md:w-[90%] mx-auto flex items-center'>
 
@@ -111,7 +112,7 @@ const Navbar = () => {
           </ul>
 
           {/* Mobile Menu */}
-          <div className={`md:hidden ${toggle ? 'translate-x-0 opacity-[100%] ' : 'translate-x-full opacity-50' }  transition-all duration-700 bg-[#222] h-[100vh] w-[250px] absolute top-0 right-0 z-50`}>
+          <div className={`md:hidden   ${toggle ? 'translate-x-0 opacity-[100%] ' : 'translate-x-full opacity-50' }  transition-all duration-700 bg-[#222] h-[100vh] w-[250px] absolute top-0 right-0 `} >
             <div className='p-1 flex justify-end'>
               <IoCloseSharp
                 className='p-[10px] text-[60px] cursor-pointer'

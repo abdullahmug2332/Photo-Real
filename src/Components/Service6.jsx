@@ -7,7 +7,7 @@ export default function Service6() {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <section className="w-[97%] 2xl:w-[75%] mx-auto my-[90px]  py-[20px] px-[40px] ">
+    <section className="w-[95%] 2xl:w-[75%] mx-auto my-[90px]  py-[20px]  ">
       <h1 className="h1 !text-[#3E4349] uppercase  ">
       Scanning <span className='text-[#20B2AA]'>(film, photos, slides)</span>
       </h1>
@@ -20,7 +20,7 @@ export default function Service6() {
         <h1 className="h1 text-[#3E4349]">We offer scanning of:</h1>
         <hr />
         <br />
-        <ul className="list-disc list-inside p">
+        <ul className="list-disc list-outside ml-[20px] p">
           <li>Photos (up to 8.5″x11″) (one-sided and two-sided)</li>
           <li>35mm films (35mm color and black&white)</li>
           <li>35mm slides (color and black&white)</li>

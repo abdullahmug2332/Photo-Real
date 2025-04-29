@@ -7,7 +7,7 @@ export default function Service9() {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <section className="w-[97%] 2xl:w-[75%] mx-auto my-[90px]  py-[20px] px-[40px] ">
+    <section className="w-[95%] 2xl:w-[75%] mx-auto my-[90px]  py-[20px]  ">
       <h1 className="h1 !text-[#3E4349]  uppercase">
         <span className="text-[#20B2AA] ">cd</span> &
         <span className="text-[#20B2AA] "> dvd</span> copying into (
@@ -41,7 +41,8 @@ export default function Service9() {
       <p className="p">We don’t restore CDs/DVDs.</p>
       <p className="p">Price is the following:</p>
       <br />
-      <table className="min-w-full border border-gray-300 text-sm shadow-xl p my-[60px]">
+      <div className='overflow-x-auto'>
+      <table className="min-w-[400px] w-[100%] border border-gray-300 text-sm shadow-xl p my-[60px]">
         <thead>
           <tr className="bg-[#20B2AA] text-white ">
             <th className="text-left p-3 border-r border-gray-300 !text-white  p">
@@ -68,6 +69,7 @@ export default function Service9() {
           </tr>
         </tbody>
       </table>
+      </div>
       <p className="p">You’ll get copies in a paper sleeve bundled together with original CD/DVD by a rubber band.</p>
       <p className="p">Thank You!</p>
     </section>

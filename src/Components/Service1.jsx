@@ -7,21 +7,14 @@ export default function Service1() {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <section className=" w-[97%] 2xl:w-[75%] mx-auto mt-[90px]">
-      <h1 className="h1  uppercase h">
+    <section className=" w-[95%] 2xl:w-[75%] mx-auto mt-[130px]">
+      <h1 className="h1  uppercase h ">
         Passport<span className="text-[#3E4349]">,</span> visa{" "}
         <span className="text-[#3E4349]">and</span> ID{" "}
         <span className="text-[#3E4349]">photos for any country</span>
       </h1><br />
       <div>
         <img className="float-right hidden md:block ml-7 mb-4" src={img1} />
-        <p className="p  pf">
-          From 8AM until 3PM we take photos for passport, visa, driver’s
-          license, and other kinds of IDs for all countries (US, Canada, UK,
-          Schengen zone, Russia, China, Australia, New Zealand, Japan, and
-          others) of people of all ages (newborn, infant, child, teenager,
-          adult, senior).
-        </p>
         <br />
         <p className="p pf">
           We are also able to send you a digital copy of the photo by email or
@@ -102,7 +95,7 @@ export default function Service1() {
         <h1 className="h1 text-[#3E4349]  h">Photo Sizes and Requirements</h1>
         <hr />
         <div className="overflow-x-auto p-4">
-          <table className="min-w-full border border-gray-300 text-sm shadow-xl !pf">
+          <table className="min-w-[700px] border border-gray-300 text-sm shadow-xl !pf">
             <thead>
               <tr className="bg-[#20B2AA] text-white">
                 <th className="text-left p-3 border-r border-gray-300 p !text-white pf">
@@ -120,8 +113,8 @@ export default function Service1() {
               {/* United States */}
               <tr className="border-t border-gray-300">
                 <td className="p-3 align-top font-medium p pf">United States</td>
-                <td className="p-3 align-top pf ">
-                  <strong className=' pf'>Photo requirements for US passport:</strong>
+                <td className="p-3 align-top p pf ">
+                  <strong className='p pf'>Photo requirements for US passport:</strong>
                   <br />
                   Photo size: 2"x2" (50×50 mm)
                   <br />
@@ -136,7 +129,7 @@ export default function Service1() {
                   <br />
                   <strong className=' pf'>(Don't wear uniforms)</strong>
                 </td>
-                <td className="p-3 align-top pf">
+                <td className="p-3 align-top p pf">
                   <strong className='pf'>
                     Photo requirements for US visa and driver's license:
                   </strong>
@@ -162,7 +155,7 @@ export default function Service1() {
               {/* Canada */}
               <tr className="border-t border-gray-300">
                 <td className="p-3 align-top font-medium p pf">Canada</td>
-                <td className="p-3 align-top pf">
+                <td className="p-3 align-top p pf">
                   <strong className=' pf'>
                     Photo requirements for Canadian passport and citizenship:
                   </strong>
@@ -175,7 +168,7 @@ export default function Service1() {
                   <br />
                   Time to make photos: 20-30 minutes.
                 </td>
-                <td className="p-3 align-top pf">
+                <td className="p-3 align-top p pf">
                   <strong>Photo requirements for Canadian visa:</strong>
                   <br />
                   Photo size: 35×45 mm
@@ -189,7 +182,7 @@ export default function Service1() {
               {/* Brazil */}
               <tr className="border-t border-gray-300 pf">
                 <td className="p-3 align-top font-medium p pf">Brazil</td>
-                <td className="p-3 align-top pf">
+                <td className="p-3 align-top p pf">
                   <strong>Photo requirements for Brazilian passport:</strong>
                   <br />
                   Photo size: 2"x2" (50×50 mm)
@@ -200,7 +193,7 @@ export default function Service1() {
                   <br />
                   White background
                 </td>
-                <td className="p-3 align-top pf">
+                <td className="p-3 align-top p pf">
                   <strong>Photo requirements for Brazilian visa:</strong>
                   <br />
                   Photo size: 2"x2"
@@ -218,7 +211,7 @@ export default function Service1() {
               {/* UK */}
               <tr className="border-t border-gray-300">
                 <td className="p-3 align-top font-medium p pf">UK</td>
-                <td className="p-3 align-top pf">
+                <td className="p-3 align-top p pf">
                   <strong>Photo requirements for UK passport:</strong>
                   <br />
                   Photo size: 35×45 mm
@@ -231,7 +224,7 @@ export default function Service1() {
                   <br />
                   No glasses or hats unless religious.
                 </td>
-                <td className="p-3 align-top pf">
+                <td className="p-3 align-top p pf">
                   <strong>Photo requirements for UK visa:</strong>
                   <br />
                   Same as for UK passport.
@@ -241,7 +234,7 @@ export default function Service1() {
               {/* Germany */}
               <tr className="border-t border-gray-300">
                 <td className="p-3 align-top font-medium p pf">Germany</td>
-                <td className="p-3 align-top pf">
+                <td className="p-3 align-top p pf">
                   <strong>Photo requirements for German passport:</strong>
                   <br />
                   Photo size: 35×45 mm
@@ -252,7 +245,7 @@ export default function Service1() {
                   <br />
                   Smile: not allowed.
                 </td>
-                <td className="p-3 align-top pf">
+                <td className="p-3 align-top p pf">
                   <strong>Photo requirements for German visa:</strong>
                   <br />
                   Same as for German passport.
@@ -262,14 +255,14 @@ export default function Service1() {
               {/* Ireland */}
               <tr className="border-t border-gray-300">
                 <td className="p-3 align-top font-medium p pf">Ireland</td>
-                <td className="p-3 align-top pf">
+                <td className="p-3 align-top p pf">
                   <strong>Photo requirements for Irish passport:</strong>
                   <br />
                   If you need an Irish passport, 4 printed photos are required.
                   <br />
                   Head size: 32-36 mm.
                 </td>
-                <td className="p-3 align-top pf">
+                <td className="p-3 align-top p pf">
                   <strong>Photo requirements for Irish visa:</strong>
                   <br />
                   Same as for Irish passport.
@@ -279,10 +272,10 @@ export default function Service1() {
               {/* Schengen */}
               <tr className="border-t border-gray-300">
                 <td className="p-3 align-top font-medium p pf">Schengen zone</td>
-                <td className="p-3 align-top pf">
+                <td className="p-3 align-top p pf">
                   (No passport - Schengen agreement)
                 </td>
-                <td className="p-3 align-top pf">
+                <td className="p-3 align-top p pf">
                   <strong>Photo requirements for Schengen visa:</strong>
                   <br />
                   Photo size: 35×45 mm
@@ -296,7 +289,7 @@ export default function Service1() {
               {/* Greece */}
               <tr className="border-t border-gray-300">
                 <td className="p-3 align-top font-medium p pf">Greece</td>
-                <td className="p-3 align-top pf">
+                <td className="p-3 align-top p pf">
                   <strong>Photo requirements for Greek passport:</strong>
                   <br />
                   3 photos needed.
@@ -305,7 +298,7 @@ export default function Service1() {
                   <br />
                   Background: white.
                 </td>
-                <td className="p-3 align-top pf">
+                <td className="p-3 align-top p pf">
                   <strong>Photo requirements for Greek visa:</strong>
                   <br />
                   Photo size: 35×45 mm
@@ -322,14 +315,14 @@ export default function Service1() {
               {/* Italy */}
               <tr className="border-t border-gray-300">
                 <td className="p-3 align-top font-medium p pf">Italy</td>
-                <td className="p-3 align-top pf">
+                <td className="p-3 align-top p pf">
                   <strong>Photo requirements for Italian passport:</strong>
                   <br />
                   Photo size: 35×45 mm
                   <br />
                   Head size: 32-36 mm
                 </td>
-                <td className="p-3 align-top pf">
+                <td className="p-3 align-top p pf">
                   <strong>Photo requirements for Italian visa:</strong>
                   <br />
                   Photo size: 35×45 mm
@@ -341,7 +334,7 @@ export default function Service1() {
               {/* Russia */}
               <tr className="border-t border-gray-300">
                 <td className="p-3 align-top font-medium p pf">Russia</td>
-                <td className="p-3 align-top pf">
+                <td className="p-3 align-top p pf">
                   <strong>Photo requirements for Russian passport:</strong>
                   <br />
                   5 photos needed.
@@ -352,7 +345,7 @@ export default function Service1() {
                   <br />
                   Neutral expression, no glasses allowed.
                 </td>
-                <td className="p-3 align-top pf">
+                <td className="p-3 align-top p pf">
                   <strong>Photo requirements for Russian visa:</strong>
                   <br />
                   2 photos needed.
@@ -364,7 +357,7 @@ export default function Service1() {
               {/* India */}
               <tr className="border-t border-gray-300">
                 <td className="p-3 align-top font-medium p pf">India</td>
-                <td className="p-3 align-top pf">
+                <td className="p-3 align-top p pf">
                   <strong>Photo requirements for Indian passport:</strong>
                   <br />
                   Photo size: 2"x2"
@@ -373,7 +366,7 @@ export default function Service1() {
                   <br />
                   White background
                 </td>
-                <td className="p-3 align-top pf">
+                <td className="p-3 align-top p pf">
                   <strong>Photo requirements for Indian visa:</strong>
                   <br />
                   Same as passport.
@@ -388,7 +381,7 @@ export default function Service1() {
               {/* China */}
               <tr className="border-t border-gray-300">
                 <td className="p-3 align-top font-medium p pf">China</td>
-                <td className="p-3 align-top pf">
+                <td className="p-3 align-top p pf">
                   <strong>Photo requirements for Chinese passport:</strong>
                   <br />
                   Photo size: 33×48 mm
@@ -397,7 +390,7 @@ export default function Service1() {
                   <br />
                   White background.
                 </td>
-                <td className="p-3 align-top pf">
+                <td className="p-3 align-top p pf">
                   <strong>Photo requirements for Chinese visa:</strong>
                   <br />
                   Same as Chinese passport.
@@ -409,14 +402,14 @@ export default function Service1() {
                 <td className="p-3 align-top font-medium p pf">
                   Japan, Australia, New Zealand
                 </td>
-                <td className="p-3 align-top pf">
+                <td className="p-3 align-top p pf">
                   <strong>Photo requirements for passport:</strong>
                   <br />
                   Photo size: 35×45 mm
                   <br />
                   Head size: 32-36 mm
                 </td>
-                <td className="p-3 align-top pf">
+                <td className="p-3 align-top p pf">
                   <strong>Photo requirements for visa:</strong>
                   <br />
                   Photo size: 35×45 mm

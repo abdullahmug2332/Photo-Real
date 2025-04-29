@@ -3,7 +3,7 @@ export const data  = [
       "id": 1,
       'service':'service1',
       "heading": "PASSPORT, VISA AND ID PHOTOS FOR ANY COUNTRY",
-      "text": "From 8 AM to 3 PM, we provide ID photo services for all ages and countries, including passports, visas, and driver's licenses."
+      "text": "For US passports,infants under 3 years old can apply Monday to Friday(8 AM to 10 AM only) excluding Canadian passport photos."
     },
     {
       "id": 2,

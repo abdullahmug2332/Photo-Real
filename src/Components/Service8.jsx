@@ -7,7 +7,7 @@ export default function Service8() {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <section className="w-[97%] 2xl:w-[75%] mx-auto my-[90px]  py-[20px] px-[40px] ">
+    <section className="w-[95%] 2xl:w-[75%] mx-auto my-[90px]  py-[20px]  ">
       <h1 className="h1 !text-[#3E4349]  uppercase">
         Converting <span className="text-[#20B2AA] ">video</span> &
         <span className="text-[#20B2AA] ">audio</span> cassette tapes and films
@@ -42,7 +42,8 @@ export default function Service8() {
         analog to digital format.
       </p>
       <img src={img1} className="w-[100%]" />
-      <table className="min-w-full border border-gray-300 text-sm shadow-xl p my-[60px]">
+      <div className='overflow-x-auto'>
+      <table className="min-w-[700px] w-[100%] border border-gray-300 text-sm shadow-xl p my-[60px]">
         <thead>
           <tr className="bg-[#20B2AA] text-white ">
             <th className="text-left p-3 border-r border-gray-300 !text-white  p">
@@ -148,7 +149,7 @@ export default function Service8() {
             <td className="p-3 align-top">2 hours per DVD</td>
           </tr>
         </tbody>
-      </table>
+      </table></div>
       <p className="p"><strong>We don’t convert these types of tapes:</strong> Betamax, Betacam, micro-cassettes.</p> <br />
       <p className="p"><strong>If you want the tapes to be converted into USB,</strong>, you can either provide your own USB drive or hard drive (it has to have at least 4 GB of free space) or get a USB flash drive from us for $15-$25.</p> <br />
       <p className="p"><strong>Tapes are converted on “First come – first served” basis.</strong> Most of the time we already have several tapes for conversion, so if you need the tapes to be converted by certain time & date, please call the store (718) 875-1776 to ask for the availability to do your order by certain time & date.</p><br />

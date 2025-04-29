@@ -6,7 +6,7 @@ export default function Service5() {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <section className="w-[97%] 2xl:w-[75%] mx-auto my-[90px]  py-[20px] px-[40px]">
+    <section className="w-[95%] 2xl:w-[75%] mx-auto my-[90px]  py-[20px] ">
       <h1 className="h1 text-[#20B2AA] uppercase">
         Digital <span className="text-[#3E4349]">Photos</span> Printing
       </h1><br />
@@ -44,7 +44,8 @@ export default function Service5() {
         <h1 className="h1 text-[#3E4349]">Price per print:</h1>
         <hr />
         <br />
-        <table className="min-w-full border border-gray-300 text-sm shadow-xl p">
+        <div className='overflow-x-auto'>
+        <table className=" min-w-[700px] w-[100%] border border-gray-300 text-sm shadow-xl p">
         <thead>
           <tr className="bg-[#20B2AA] text-white p">
             <th className="text-left p-3 border-r border-gray-300 !text-white p">
@@ -102,14 +103,16 @@ export default function Service5() {
           </tr>
           <tr className="border-t border-gray-300">
             <td className="p-3 align-top font-medium p">51+ prints</td>
-            <td className="p-3 align-top p">$0.55</td>
-            <td className="p-3 align-top p">$0.55</td>
+            <td className="p-3 align-top p">$0.50</td>
+            <td className="p-3 align-top p">$0.50</td>
             <td className="p-3 align-top p">$2.00</td>
             <td className="p-3 align-top p">$4.25</td>
             <td className="p-3 align-top p">$5.00</td>
           </tr>
         </tbody>
       </table><br />
+      </div>
+      
       <p className="p">Matte finish is available for an additional cost.
         For scanning orders, please inquire within.</p> <br />
       </div><br />
