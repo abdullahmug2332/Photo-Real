@@ -54,3 +54,11 @@ td{
     background-position: center;
   }
 }
+.bs{
+  width: 100vw;
+  height: 100vh;
+  background: #0000009c;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
