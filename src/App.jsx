@@ -19,13 +19,16 @@ import Service8 from './Components/Service8'
 import Service9 from './Components/Service9'
 import Service10 from './Components/Service10'
 import Home from './Components/Home'
+import Slider from './Components/Slider';
 
 function App() {
 
 
   return (
-    <>
+    <>    
+    <Slider/>
     <Navbar/>
+
      <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="/service1" element={<Service1 />} />

@@ -104,7 +104,7 @@ export default function Service1() {
         <div className="overflow-x-auto p-4">
           <table className="min-w-full border border-gray-300 text-sm shadow-xl !pf">
             <thead>
-              <tr className="bg-[#91816c] text-white">
+              <tr className="bg-[#20B2AA] text-white">
                 <th className="text-left p-3 border-r border-gray-300 p !text-white pf">
                   Country
                 </th>

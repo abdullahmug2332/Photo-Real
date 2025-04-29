@@ -4,7 +4,7 @@ export default function Home2() {
   return (
     <section id='aboutus' className=' w-[100%] py-[70px]'>
       <div className=' w-[93%] 2xl:w-[75%] mx-auto text-[#3E4349] '>
-        <p className='text-[30px] md:text-[58px] font-[700]  mb-[20px] uppercase h tracking-wider'>About <span className='text-[#91816c]'> Photoreal</span></p>
+        <p className='text-[30px] md:text-[58px] font-[700]  mb-[20px] uppercase h tracking-wider'>About <span className='text-[#20B2AA]'> Photoreal</span></p>
         <p className='p text-[17px] md:text-[20px] mb-[15px] pf'>Photoreal was founded in 1992, and has been providing all kinds of photo services to the public ever since. Although film industry has almost died a few years ago, we managed to survive thanks to support of people who love shooting film..</p>
         
         <div className="flex flex-col md:flex-row  justify-between mb-[15px] pf">

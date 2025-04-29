@@ -14,7 +14,7 @@
 .h1{
   font-family: "Cal Sans", sans-serif;
   font-style: normal;
-  @apply text-[25px] md:text-[40px] font-[400] leading-[39px]  mb-[20px] tracking-wider text-[#91816c] relative top-[12px]; 
+  @apply text-[25px] md:text-[40px] font-[400] leading-[39px]  mb-[20px] tracking-wider text-[#20B2AA] relative top-[12px]; 
 }
 @tailwind utilities;
 
@@ -61,4 +61,23 @@ td{
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.slider-container {
+  width: 100%;
+  overflow: hidden;
+  background-color: #252525;
+  padding: 10px 0;
+  border-bottom: 1px solid #f7f5f5;
+
+}
+
+.slider-text {
+  display: inline-block;
+  white-space: nowrap;
+  font-size: 1.2rem;
+  color: #ffffff;
+  font-family: "Nunito", sans-serif;
+  letter-spacing: 2px;
+  font-weight: 800;
 }

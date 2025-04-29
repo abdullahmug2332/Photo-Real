@@ -9,7 +9,7 @@ export default function Service4() {
   return (
     <section className="w-[97%] 2xl:w-[75%] mx-auto my-[90px]  py-[20px] px-[40px]">
       <h1 className="h1 text-[#3E4349] uppercase h">
-      Disposable <span className='text-[#91816c]'>cameras</span> developing
+      Disposable <span className='text-[#20B2AA]'>cameras</span> developing
       </h1>
       <hr />
       <br />
@@ -24,7 +24,7 @@ export default function Service4() {
       <br />
       <table className="min-w-full border border-gray-300 text-sm shadow-xl p">
         <thead>
-          <tr className="bg-[#91816c] text-white p">
+          <tr className="bg-[#20B2AA] text-white p">
             <th className="text-left p-3 border-r border-gray-300 !text-white p">
               Job
             </th>

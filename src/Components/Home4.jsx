@@ -19,7 +19,7 @@ export default function Home4() {
             <li
               key={cat}
               onClick={() => setCategory(cat)}
-              className={`cursor-pointer text-[15px] px-[15px] py-[14px] ${category === cat ? 'bg-[#91816c] text-white' : 'text-[#3E4349] hover:bg-[#91816c] hover:text-white'} duration-500 pf`}
+              className={`cursor-pointer text-[15px] px-[15px] py-[14px] ${category === cat ? 'bg-[#20B2AA] text-white' : 'text-[#3E4349] hover:bg-[#20B2AA] hover:text-white'} duration-500 pf`}
             >
               {cat}
             </li>
@@ -29,7 +29,7 @@ export default function Home4() {
           {filteredProducts.map(({ id, title, img }) => (
             <div key={id} className='shadow-2xl hover:scale-105 duration-300 cursor-pointer rounded-bl-[7px] rounded-br-[7px] text-center'>
               <img src={img} alt={title} />
-              <div className='p-3 text-white bg-[#91816c] min-h-[120px] rounded-bl-[7px] rounded-br-[7px] flex justify-center items-center'>
+              <div className='p-3 text-white bg-[#20B2AA] min-h-[120px] rounded-bl-[7px] rounded-br-[7px] flex justify-center items-center'>
                 <p>{title}</p>
               </div>
             </div>

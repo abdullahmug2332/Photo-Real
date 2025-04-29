@@ -25,7 +25,7 @@ export default function Address() {
       <div></div>
       <div className="flex flex-col md:flex-row justify-between my-[20px]  ">
         <div className="text-center md:text-start my-[10px] md:my-[30px] w-[70%] mx-auto md:w-[30%]  shadow-xl  p-7 rounded-lg duration-500 hover:scale-[1.02] cursor-pointer">
-          <p className="text-[#91816c] text-[20 px] md:text-[25px]">
+          <p className="text-[#20B2AA] text-[20 px] md:text-[25px]">
             <strong>Phone, Fax, Email</strong>
           </p>
           <p className="p  ">
@@ -42,7 +42,7 @@ export default function Address() {
           </p>
         </div>
         <div className="text-center md:text-start my-[10px] md:my-[30px] w-[70%] mx-auto md:w-[30%]  shadow-xl   p-7 rounded-lg duration-500 hover:scale-[1.02] cursor-pointer">
-          <p className="text-[#91816c] text-[20 px] md:text-[25px]">
+          <p className="text-[#20B2AA] text-[20 px] md:text-[25px]">
             <strong>Business Hours</strong>
           </p>
           <p className="p  ">Monday – Friday: 8 am – 3 pm</p>
@@ -55,7 +55,7 @@ export default function Address() {
           </p>
         </div>
         <div className="text-center md:text-start my-[10px] md:my-[30px] w-[70%] mx-auto md:w-[30%]  shadow-xl   p-7 rounded-lg duration-500 hover:scale-[1.02] cursor-pointer">
-          <p className="text-[#91816c] text-[20 px] md:text-[25px]">
+          <p className="text-[#20B2AA] text-[20 px] md:text-[25px]">
             <strong>Address</strong>
           </p>
           <p className="p  ">52 Court Street, 2nd floor,</p>
@@ -67,7 +67,7 @@ export default function Address() {
       <div className="flex  my-[50px] justify-between">
         <div className="w-[100%] md:w-[50%]  ">
           <div className=" p-7 rounded-lg shadow-xl   duration-500 hover:scale-[1.02] cursor-pointer ">
-            <p className="text-[#91816c] text-[20px] md:text-[25px]">
+            <p className="text-[#20B2AA] text-[20px] md:text-[25px]">
               <strong>Location</strong>
             </p>
             <p className="p ">
@@ -79,7 +79,7 @@ export default function Address() {
           </div>
           <br />
           <div className=" p-7 rounded-lg shadow-xl  duration-500 hover:scale-[1.02] cursor-pointer">
-            <p className="text-[#91816c] text-[20 px] md:text-[25px]">
+            <p className="text-[#20B2AA] text-[20 px] md:text-[25px]">
               <strong>How to get to us by subway:</strong>
             </p>
             <ul className="list-disc">
@@ -102,7 +102,7 @@ export default function Address() {
           </div><br />
 
           <div className=" p-7 rounded-lg shadow-xl   duration-500 hover:scale-[1.02] cursor-pointer">
-            <p className="text-[#91816c] text-[20 px] md:text-[25px]">
+            <p className="text-[#20B2AA] text-[20 px] md:text-[25px]">
               <strong>Parking:</strong>
             </p>
             <p className="p e">
@@ -114,7 +114,7 @@ export default function Address() {
           <br />
 
           <div className="p-7 rounded-lg shadow-xl  duration-500 hover:scale-[1.02] cursor-pointer">
-            <p className="text-[#91816c] text-[20 px] md:text-[25px]">
+            <p className="text-[#20B2AA] text-[20 px] md:text-[25px]">
               <strong>Wheelchair:</strong>
             </p>
             <p className="p">

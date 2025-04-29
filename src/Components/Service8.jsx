@@ -9,10 +9,10 @@ export default function Service8() {
   return (
     <section className="w-[97%] 2xl:w-[75%] mx-auto my-[90px]  py-[20px] px-[40px] ">
       <h1 className="h1 !text-[#3E4349]  uppercase">
-        Converting <span className="text-[#91816c] ">video</span> &
-        <span className="text-[#91816c] ">audio</span> cassette tapes and films
+        Converting <span className="text-[#20B2AA] ">video</span> &
+        <span className="text-[#20B2AA] ">audio</span> cassette tapes and films
         into
-        <span className="text-[#91816c] ">digital format</span>
+        <span className="text-[#20B2AA] ">digital format</span>
       </h1>
       <br />
       <p className="p">
@@ -44,7 +44,7 @@ export default function Service8() {
       <img src={img1} className="w-[100%]" />
       <table className="min-w-full border border-gray-300 text-sm shadow-xl p my-[60px]">
         <thead>
-          <tr className="bg-[#91816c] text-white ">
+          <tr className="bg-[#20B2AA] text-white ">
             <th className="text-left p-3 border-r border-gray-300 !text-white  p">
               Tape or film type
             </th>

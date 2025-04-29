@@ -9,7 +9,7 @@ export default function Service6() {
   return (
     <section className="w-[97%] 2xl:w-[75%] mx-auto my-[90px]  py-[20px] px-[40px] ">
       <h1 className="h1 !text-[#3E4349] uppercase  ">
-      Scanning <span className='text-[#91816c]'>(film, photos, slides)</span>
+      Scanning <span className='text-[#20B2AA]'>(film, photos, slides)</span>
       </h1>
       <br />
       <div>
