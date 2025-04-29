@@ -7,7 +7,7 @@ export default function Home3() {
   return (
     <section id='services' className='home2 bg-[#25292c] py-[40px]'>
       <div className=' w-[93%] 2xl:w-[75%] mx-auto '>
-        <p className='text-[30px] md:text-[58px] font-[700] tracking-tighter mb-[20px] text-white uppercase h tracking-wider'><span className='text-[#20B2AA]'>Our </span>Services</p>
+        <p className='text-[30px] md:text-[58px] font-[700]  mb-[20px] text-white uppercase h tracking-wider'><span className='text-[#20B2AA]'>Our </span>Services</p>
         <p className='p text-[17px] md:text-[20px] mb-[15px] text-white pf'>Our services include passport and ID photo printing for any country. We specialize in film and disposable camera development, along with digital photo printing and scanning for slides and negatives. Enhance your memories with a photo slideshow on DVD and video or audio tape digitizing. We also offer CD/DVD duplication and fax services for your convenience.</p>
         <hr className="text-white hover mt-[30px]" />
         <div className="cards grid grid-cols-2 md:grid-cols-5 gap-3 mt-[20px] text-center ">
