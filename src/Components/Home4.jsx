@@ -53,7 +53,7 @@ export default function Home4() {
             <div
               key={id}
               onClick={() => setSelectedProduct({ title, img })}
-              className="shadow-2xl hover:scale-105 duration-300 cursor-pointer rounded-bl-[7px] rounded-br-[7px] text-center"
+              className="shadow-2xl hover:scale-[1.02] duration-300 cursor-pointer rounded-bl-[7px] rounded-br-[7px] text-center"
             >
               <img src={img} alt={title} />
               <div className="p-3 text-white bg-[#20B2AA] min-h-[120px] rounded-bl-[7px] rounded-br-[7px] flex justify-center items-center">
