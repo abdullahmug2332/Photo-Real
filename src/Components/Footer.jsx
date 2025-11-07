@@ -6,7 +6,7 @@ import { IoLocation } from "react-icons/io5";
 export default function Footer() {
   return (
     <>
-      <footer className="  items-center bg-[#20B2AA] text-white pt-[40px]">
+      <footer className="  items-center bg-[#20B2AA] text-white pt-[40px]" id="contactus">
         <div className="w-[93%] md:w-[80%] mx-auto mt-[20px]">
           <div className="flex flex-col md:flex-row">
             <div className="flex flex-col gap-[10px] w-[100%] md:w-[50%]">

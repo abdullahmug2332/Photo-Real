@@ -17,10 +17,10 @@ export default function Service1() {
         <img className="float-right hidden md:block ml-7 mb-4" src={img1} />
         <br />
         <p className="p pf">
-          We are also able to send you a digital copy of the photo by email or
-          save it to your USB drive or memory card.
+          For US and other countries, we take passport photos for infants from 8 AM to 10 AM, and for adults from 8 AM to 3 PM, Monday to Friday. For Canadian passport photos, we only take photos for those aged 4 and above from 8 AM to 3 PM, Monday to Friday.
         </p>{" "}
         <br />
+        <p className="p pf font-[700] mb-[20px]">All the digital photos we are going to send with an extra cost after 3:30 PM on the same day</p>
         <p className="p pf">We can take photos even if you are on a wheelchair.</p>
         <br />
         <p className="p pf">
@@ -61,6 +61,7 @@ export default function Service1() {
             <br />
             $15 for 2 photos, <br />
             $26 for 4 photos <br />
+            <span className='font-[700]'>Electronic US $15</span> <br />
             Turnaround time – 10 minutes.
           </li>
           <li className="my-[10px] p pf ">
@@ -73,10 +74,7 @@ export default function Service1() {
         </ul>
         <br />
         <p className="p pf">
-          For US passports: Infants under 3 years old can apply Monday to
-          Friday(8 AM to 10 AM only) excluding Canadian passport photos. For
-          ages 3 years to adults: Applications are accepted Monday to Friday, 8
-          AM to 3 PM.
+          For US passports or any other countries, we take passport photos for infants from 8 AM to 10 AM only. For adults, we take photos from 8 AM to 3 PM, Monday to Friday. For Canadian passport photos, we only take photos for individuals aged 4 years and above from 8 AM to 3 PM, Monday to Friday
         </p>{" "}
         <br />
         <p className="p pf">

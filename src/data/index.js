@@ -3,7 +3,7 @@ export const data  = [
       "id": 1,
       'service':'service1',
       "heading": "PASSPORT, VISA AND ID PHOTOS FOR ANY COUNTRY",
-      "text": "For US passports,infants under 3 years old can apply Monday to Friday(8 AM to 10 AM only) excluding Canadian passport photos."
+      "text": "For US and other countries, we take passport photos for infants from 8 AM to 10 AM, and for adults from 8 AM to 3 PM, Monday to Friday. For Canadian passport photos, we only take photos for those aged 4 and above from 8 AM to 3 PM, Monday to Friday."
     },
     {
       "id": 2,

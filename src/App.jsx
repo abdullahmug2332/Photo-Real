@@ -1,11 +1,7 @@
-import { useState } from 'react'
+
 import { Routes, Route } from 'react-router-dom';
 import './App.css'
 import Navbar from './Components/Navbar'
-import Homehero from './Components/HomeHero'
-import Home2 from './Components/Home2'
-import Home3 from './Components/Home3'
-import Home4 from './Components/Home4'
 import Footer from './Components/Footer'
 import Address from './Components/Address'
 import Service1 from './Components/Service1'
