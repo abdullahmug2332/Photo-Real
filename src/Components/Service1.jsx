@@ -20,7 +20,7 @@ export default function Service1() {
           For US and other countries, we take passport photos for infants from 8 AM to 10 AM, and for adults from 8 AM to 3 PM, Monday to Friday. For Canadian passport photos, we only take photos for those aged 4 and above from 8 AM to 3 PM, Monday to Friday.
         </p>{" "}
         <br />
-        <p className="p pf font-[700] mb-[20px]">All the digital photos we are going to send with an extra cost after 3:30 PM on the same day</p>
+        {/* <p className="p pf font-[700] mb-[20px]">All the digital photos we are going to send with an extra cost after 3:30 PM on the same day</p> */}
         <p className="p pf">We can take photos even if you are on a wheelchair.</p>
         <br />
         <p className="p pf">
