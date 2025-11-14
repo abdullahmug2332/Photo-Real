@@ -1,31 +1,76 @@
-import React, { useEffect } from 'react'
-
+import { useEffect } from 'react';
 import img1 from "../assets/service10.jpg";
-
+import { useState } from 'react';
+import { baseURL } from '../../API/baseURL';
 
 export default function Service10() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+   const [data, setData] = useState(null);
+   const [loading, setLoading] = useState(true);
+   const [error, setError] = useState(null);
+ 
+   // Scroll to top on mount
+   useEffect(() => {
+     window.scrollTo(0, 0);
+   }, []);
+ 
+   // Fetch data from API
+   useEffect(() => {
+     const fetchData = async () => {
+       try {
+         const response = await fetch(`${baseURL}/service10`);
+         if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+         const result = await response.json();
+         setData(result);
+       } catch (err) {
+         setError(err.message);
+       } finally {
+         setLoading(false);
+       }
+     };
+ 
+     fetchData();
+   }, []);
+ 
+   if (loading) return <p>Loading...</p>;
+   if (error) return <p>Error: {error}</p>;
+   if (!data) return <p>No data found</p>;
+ 
+
   return (
-    <section className="w-[95%] 2xl:w-[75%] mx-auto my-[90px]  py-[20px] ">
-      <h1 className="h1 !text-[#3E4349]  uppercase">
-        <span className="text-[#20B2AA] ">Fax </span> services
+    <section className="w-[95%] 2xl:w-[75%] mx-auto my-[90px] py-[20px]">
+      {/* Title */}
+      <h1 className="h1 !text-[#3E4349] uppercase">
+        {data.title.split(" ").map((t, i) =>
+          data.highlightedtitle.includes(t) ? (
+            <span key={i} className="text-[#20B2AA]">{t} </span>
+          ) : (
+            <span key={i}>{t} </span>
+          )
+        )}
       </h1>
       <br />
-      <img
-        src={img1}
-        className="w-[200px] md:w-[400px] xl:w-[500px] hidden md:block float-right my-7 ml-[20px] mt-[50px]"
-      />
-      <ul className="list-disc list-outside ml-5 p">
-      <li className="p">Photoreal is the place with fax machine in Brooklyn NY where you can send and receive fax.</li><br />
-      <li className="p">For receiving fax, our machine is always on. You can pick up the received fax during store hours.</li><br />
-      <li className="p">Sending documents and other papers up to 8.5″x11″ by fax is available only during store hours.</li><br />
-      <li className="p"><strong>Local fax (within United States):</strong> $1 per page</li><br />
-      <li className="p"><strong>International fax:</strong> $5 for the 1st page and $3 for all other pages.</li><br />
-      <li className="p">If you have 20 or more pages, we’ll give you a discount.</li><br />
-      <li className="p">You will not be charged unless your fax goes through.</li><br />
-      </ul>
+
+      <div className="flex flex-col lg:flex-row gap-[20px]">
+        <div className='w-full lg:w-[60%]'>
+          {/* List */}
+          <ul className="list-disc list-outside ml-5 p">
+            {data.list.map((item, idx) => (
+              <li key={idx} className="p mb-2">{item}</li>
+            ))}
+          </ul>
+        </div>
+        <div className='w-full lg:w-[40%]'>
+          {/* Image */}
+          <img
+            src={img1}
+            className="w-[200px] md:w-[400px] xl:w-[500px] hidden lg:block float-right my-7 ml-[20px] mt-[50px]"
+            alt="Fax Service"
+          />
+        </div>
+      </div>
+
+
+      
     </section>
   );
 }

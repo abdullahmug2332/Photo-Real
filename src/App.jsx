@@ -24,7 +24,6 @@ function App() {
     <>    
     <Slider/>
     <Navbar/>
-
      <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="/service1" element={<Service1 />} />

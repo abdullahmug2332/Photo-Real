@@ -1,64 +1,81 @@
-import React, { useEffect } from 'react'
-
+import React, { useEffect } from 'react';
 import img1 from "../assets/service3.jpg";
+ import { useState } from 'react';
+   import { baseURL } from '../../API/baseURL';
 
 export default function Service3() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  
+   const [data, setData] = useState(null);
+   const [loading, setLoading] = useState(true);
+   const [error, setError] = useState(null);
+ 
+   // Scroll to top on mount
+   useEffect(() => {
+     window.scrollTo(0, 0);
+   }, []);
+ 
+   // Fetch data from API
+   useEffect(() => {
+     const fetchData = async () => {
+       try {
+         const response = await fetch(`${baseURL}/service3`);
+         if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+         const result = await response.json();
+         setData(result);
+       } catch (err) {
+         setError(err.message);
+       } finally {
+         setLoading(false);
+       }
+     };
+ 
+     fetchData();
+   }, []);
+ 
+   if (loading) return <p>Loading...</p>;
+   if (error) return <p>Error: {error}</p>;
+   if (!data) return <p>No data found</p>;
+ 
+
   return (
     <section className="w-[95%] 2xl:w-[75%] mx-auto my-[90px] py-[20px] pf">
-      <h1 className="h1  uppercase h">
-        <span className="text-[#3E4349]">
-          Film developing and scanning into{" "}
-        </span>
-        CD/USB/email
-        <span className="text-[#3E4349]"> (35mm and 120mm films)</span>
+      {/* Title */}
+      <h1 className="h1 uppercase h">
+        {data.title.split(" ").map((t, i) =>
+          data.highlightedtitle.includes(t) ? (
+            <span key={i} className="text-[#20b2aa]">{t} </span>
+          ) : (
+            <span key={i} className="text-[#3E4349]">{t} </span>
+          )
+        )}
       </h1>
-      <div>
-        <h1 className="h1 text-[#3E4349] h">Types of ID Photos We Take</h1>
-        <hr />
-        <br />
-        <div>
-          <img className="float-right ml-7 w-[200px] md:w-[400px] xl:w-[500px]  hidden md:block  rounded-lg" src={img1} />
-          <p className="p">We develop (process) these types of film:</p>
-          <ul className="list-disc list-inside p">
-            <li>color films (C-41) (35mm and 120mm)</li>
-            <li>220mm films</li>
-            <li>E-6 (slide) films</li>
-            <li>black & white films (35mm and 120mm)</li>
-            <li>disposable cameras (color and black & white)</li>
-            <li>APS films</li>
-          </ul><br />
-          <div>
-            <p className="p">We don’t develop (don’t process):</p>
-            <ul className="list-disc list-inside p">
-              <li>110mm films</li>
-              <li>other film types</li>
-              <li>other film</li>
-            </ul> <br />
-          </div>
-          <div>
 
-          <h1 className="h1 text-[#3E4349] h">Types of ID Photos We Take</h1>
-          <hr /><br />
-          <p className="p">Color Rolls are $13 for scanning and take ~1 day.</p>
-          <p className="p">B/W Rolls are 35mm and costs $16.</p>
-          <p className="p">120mm Rolls either b/w or colour costs $21 plus tax</p>
-          <p className="p">You’ll get your negatives back.</p>
-          </div> <br />
-          
-          <div>
-          <h1 className="h1 text-[#3E4349] h">How to pay</h1>
-          <hr /><br />
-            <p className="p">We accept:</p>
-            <ul className="list-disc list-inside p">
-              <li>cash</li>
-              <li>credit / debit card</li>
-              <li>Apple Pay, Google Pay</li>
-            </ul>
+      <div>
+        <img
+          className="float-right ml-7 w-[200px] md:w-[400px] xl:w-[500px] hidden md:block rounded-lg"
+          src={img1}
+          alt="Service"
+        />
+
+        {/* Sections */}
+        {data.sections.map((section, idx) => (
+          <div key={idx} className="mb-4">
+            {section.title && <h1 className="h1 text-[#3E4349] h">{section.title}</h1>}
+            {section.title && <hr />}
+            {section.paragraphs &&
+              section.paragraphs.map((p, i) => (
+                <p key={i} className="p pf mb-4" dangerouslySetInnerHTML={{ __html: p }}></p>
+              ))}
+            {section.list && (
+              <ul className="list-disc list-inside p pf">
+                {section.list.map((item, i) => (
+                  <li key={i} className="my-[5px] p pf">{item}</li>
+                ))}
+              </ul>
+            )}
+            <br />
           </div>
-        </div>
+        ))}
       </div>
     </section>
   );

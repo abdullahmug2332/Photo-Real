@@ -1,15 +1,56 @@
-import React, { useState } from 'react';
-import { productsData } from "../data/product";
+import  { useState } from 'react';
+// import { productsData } from "../data/product";
 import { IoCloseOutline } from "react-icons/io5";
+import img1 from '../assets/products/01.jpg'
+import img2 from '../assets/products/02.jpg'
+import img3 from '../assets/products/03.jpg'
+import img4 from '../assets/products/04.jpg'
+import img5 from '../assets/products/05.jpg'
+import img6 from '../assets/products/06.jpg'
+import img7 from '../assets/products/07.jpg'
+import img8 from '../assets/products/08.jpg'
+import img9 from '../assets/products/09.jpg'
+import img10 from '../assets/products/10.jpg'
+import img11 from '../assets/products/11.jpg'
+import img12 from '../assets/products/12.jpg'
+import img13 from '../assets/products/13.png'
+import img14 from '../assets/products/14.jpg'
+import img15 from '../assets/products/15.jpg'
+import img16 from '../assets/products/16.jpg'
+import img17 from '../assets/products/17.png'
+import img18 from '../assets/products/18.png'
+import img19 from '../assets/products/19.jpg'
+import img20 from '../assets/products/20.jpg'
+import img21 from '../assets/products/21.jpg'
+import img22 from '../assets/products/22.jpg'
+import img23 from '../assets/products/23.jpg'
+import img24 from '../assets/products/24.jpg'
+import img25 from '../assets/products/25.jpg'
+import img26 from '../assets/products/26.jpeg'
+import img27 from '../assets/products/27.jpg'
+import img28 from '../assets/products/28.jpg'
+import img29 from '../assets/products/29.png'
+import img30 from '../assets/products/30.jpg'
+import img31 from '../assets/products/31.jpg'
+import img32 from '../assets/products/32.jpg'
+import img33 from '../assets/products/33.jpg'
+import img34 from '../assets/products/34.jpg'
 
-export default function Home4() {
+export default function Home4(props) {
+  const data=props.data
+  const images =[
+  img1, img2, img3, img4, img5, img6, img7, img8, img9, img10,
+  img11, img12, img13, img14, img15, img16, img17, img18, img19, img20,
+  img21, img22, img23, img24, img25, img26, img27, img28, img29, img30, 
+  img31, img32, img33, img34
+]
   const [category, setCategory] = useState("All Products");
   const [selectedProduct, setSelectedProduct] = useState(null); // stores clicked product
 
   const filteredProducts =
     category === "All Products"
-      ? productsData
-      : productsData.filter(
+      ? data.productsData
+      : data.productsData.filter(
           (item) =>
             item.category.toLowerCase() === category.toLowerCase()
         );
@@ -17,11 +58,11 @@ export default function Home4() {
   return (
     <section id="products" className="w-[100%] py-[70px] relative">
       <div className="w-[93%] 2xl:w-[75%] mx-auto">
-        <p className="text-[30px] md:text-[58px] font-[700] mb-[20px] text-[#3E4349] uppercase tracking-wider">
-          Products
+        <p className="text-[30px] md:text-[58px] font-[700] h mb-[20px] text-[#3E4349] uppercase tracking-wider">
+          {data.title}
         </p>
         <p className="text-[17px] md:text-[20px] mb-[15px]">
-          We offer a variety of photography products...
+          {data.description}
         </p>
         <hr className="text-[#3E4349]" />
         <ul className="flex flex-wrap justify-center items-center mt-6 gap-2">
@@ -55,7 +96,7 @@ export default function Home4() {
               onClick={() => setSelectedProduct({ title, img })}
               className="shadow-2xl hover:scale-[1.02] duration-300 cursor-pointer rounded-bl-[7px] rounded-br-[7px] text-center"
             >
-              <img src={img} alt={title} />
+              <img src={`${images[id-1]}`} alt={title} />
               <div className="p-3 text-white bg-[#20B2AA] min-h-[120px] rounded-bl-[7px] rounded-br-[7px] flex justify-center items-center">
                 <p>{title}</p>
               </div>
